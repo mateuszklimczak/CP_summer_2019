@@ -6,7 +6,7 @@ public class TickTackToe {
         int[] row1 = ticktacktoe[0];
         row1[0] = 1;
         // 2nd row 3 col
-        ticktacktoe[1][2] = -1;
+        ticktacktoe[1][2] = 0;
         int[] row2 = ticktacktoe[1];
         //
         System.out.println(row2[2]);
