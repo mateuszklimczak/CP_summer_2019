@@ -8,5 +8,6 @@ public class Cricle extends Shape {
 
     public double calcSurface(){
         return Math.PI*parA*parA;
+        //return Math.PI*Math.pow(parA, 2);
     }
 }

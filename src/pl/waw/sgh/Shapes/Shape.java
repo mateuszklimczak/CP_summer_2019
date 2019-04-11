@@ -1,6 +1,6 @@
 package pl.waw.sgh.Shapes;
 
-public class Shape {
+public abstract class Shape {   //abstract - i don't know any ne to create new shape in this class
 
     double parA;
     double parB;
@@ -18,6 +18,10 @@ public class Shape {
         this.parA = parA;
         this.parB = parB;
     }
+
+
+    public abstract double calcSurface();
+
     @Override
     public String toString(){
         return "Shape [parA=" + parA + " , ParB=" + parB + "]";
