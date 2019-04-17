@@ -4,16 +4,17 @@ public abstract class Shape {   //abstract - i don't know any ne to create new s
 
     double parA;
     double parB;
+    double parH;
 
-    public Shape(double parA, double parB){
-        setParams(parA, parB);
+    public Shape(double parA, double parB, double parH){
+        setParams(parA, parB, parH);
     }
 
-    public Shape(double parA){
-        setParams(parA, 0);
+    public Shape(double a, double parA){
+        setParams(parA, 0, parH);
     }
 
-    public void setParams(double parA, double parB){
+    public void setParams(double parA, double parB, double parH){
 
         this.parA = parA;
         this.parB = parB;

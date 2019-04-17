@@ -3,7 +3,7 @@ package pl.waw.sgh.Shapes;
 public class Cricle extends Shape {
 
     public Cricle(double parA) {
-        super(parA);
+        super(parA, parA);
     }
 
     public double calcSurface(){
