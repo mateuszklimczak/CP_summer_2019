@@ -10,4 +10,5 @@ public class Square extends Shape {
         return parA*parA;
     }
 
+
 }

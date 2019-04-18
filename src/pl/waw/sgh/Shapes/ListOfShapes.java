@@ -1,0 +1,85 @@
+/*
+package pl.waw.sgh.Shapes;
+import java.util.ArrayList;
+import java.util.Collections;
+
+import java.util.List;
+
+public class ListOfShapes {
+
+    public static void main (String[] args){
+        List<Shape> myShapeList = new ArrayList<>();
+        myShapeList.add(new Rectangle(5,6));
+        myShapeList.add(new Cricle(8));
+        myShapeList.add(new Rectangle(4,5));
+
+        myShapeList.set(1, new Cricle(3));
+        //myShapeList.add(index: 1, new Cricle(3));
+         //myShapeList.remove(index: 0);
+        System.out.println("position of my rectangle: " + myShapeList.indexOf(new Rectangle (4, 5)));
+
+
+
+        for(Shape s : myShapeList){
+            System.out.println(s);
+        }
+
+        System.out.println();
+
+        Collections.sort(myShapeList);
+
+        for(Shape s : myShapeList){
+            System.out.println(s);
+        }
+
+    }
+
+}
+*/ //my
+
+package pl.waw.sgh.Shapes;
+
+import java.util.ArrayList;
+import java.util.Collection;
+import java.util.Collections;
+import java.util.List;
+
+public class ListOfShapes {
+
+    public static void main(String[] args) {
+
+        //Shape[]
+
+        Rectangle r1 = new Rectangle(4,5);
+        List<Shape> myShapeList = new ArrayList<>();
+        myShapeList.add(new Rectangle(5,6));
+        myShapeList.add(new Cricle(8));
+        myShapeList.add(r1);
+        myShapeList.add(new Rectangle(2,3));
+
+        myShapeList.add(1, new Cricle(3));
+        myShapeList.remove(0);
+        System.out.println("Position of my rectangle: "
+                + myShapeList.indexOf(new Rectangle(4,5)));
+        System.out.println("Position of R1: "
+                + myShapeList.indexOf(r1));
+
+        //myShapeList.add
+
+        for (Shape s : myShapeList) {
+            System.out.println(s + " surf: " + s.calcSurface());
+        }
+
+        System.out.println();
+        Collections.sort(myShapeList);
+        for (Shape s : myShapeList) {
+            System.out.println(s + " surf: " + s.calcSurface());
+        }
+
+        System.out.println("Sorted by parA+parB");
+        Collections.sort(myShapeList, new ShapeComperator());
+        for (Shape s : myShapeList) {
+            System.out.println(s + " surf: " + s.calcSurface());
+        }
+    }
+}

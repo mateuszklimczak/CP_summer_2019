@@ -7,6 +7,7 @@ public class EquilateralTriangle extends Triangle {
     }
 
     public double calcSurface() {
+
         return (Math.pow(parA,2)*Math.sqrt(3))/4;
     }
 }

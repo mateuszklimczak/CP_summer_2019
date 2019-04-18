@@ -10,4 +10,6 @@ public class Cricle extends Shape {
         return Math.PI*parA*parA;
         //return Math.PI*Math.pow(parA, 2);
     }
+
+
 }

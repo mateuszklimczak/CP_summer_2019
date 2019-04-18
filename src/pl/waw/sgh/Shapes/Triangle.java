@@ -6,7 +6,9 @@ public  class Triangle extends Shape {
     }
 
     public double calcSurface() {
-        return 0.5 * parA * parH;
+        return 0.5*parA*parH;
     }
+
+
 }
 
