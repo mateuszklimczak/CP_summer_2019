@@ -18,6 +18,7 @@ public abstract class Shape {   //abstract - i don't know any ne to create new s
 
         this.parA = parA;
         this.parB = parB;
+
     }
 
 
@@ -25,6 +26,6 @@ public abstract class Shape {   //abstract - i don't know any ne to create new s
 
     @Override
     public String toString(){
-        return "Shape [parA=" + parA + " , ParB=" + parB + "]";
+        return "Shape [parA=" + parA + " , ParB=" + parB + "parH=" + parH + "]";
     }
 }
