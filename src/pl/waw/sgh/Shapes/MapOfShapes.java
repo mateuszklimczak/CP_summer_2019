@@ -14,15 +14,15 @@ public class MapOfShapes {
         myMapShape.put("R1", new Rectangle(7, 8));
         myMapShape.put("C2", new Cricle(6));
 
-        Cricle c2 = (Cricle)myMapShape.get("C2");
+        Cricle c2  = (Cricle)myMapShape.get("C2");
         System.out.println("c2: " + c2);
 
         System.out.println();
-        for (String k : myMapShape.keySet()){
-            System.out.println( k + " is " +myMapShape.get(k));
+        for (String k : myMapShape.keySet()) {
+            System.out.println(k + " is " + myMapShape.get(k));
         }
 
-        Collection Shapes = myMapShape.values();
+        Collection shapes = myMapShape.values();
 
     }
 }
