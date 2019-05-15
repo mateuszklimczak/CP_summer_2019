@@ -4,7 +4,7 @@ import java.math.BigDecimal;
 
 public class PlayWithBank {
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws NotEnoughMoneyException, NonExistingAccountException {
         Bank bank = new Bank("MyBank");
         Customer c1 = bank.newCustomer("John", "Smith", "john@smith.com");
         Customer c2 = bank.newCustomer("Anne", "Brown", "anne@brown.com");
